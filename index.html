@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toko HP + Live Chat AI + Form Keluhan</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="chat.css">
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<header class="hero">
+<h1 class="title">Toko HP Kece Badai Premium</h1>
+<p class="subtitle">Produk, Live Chat AI, dan Form Keluhan</p>
+</header>
+
+<main class="product-container">
+<div class="product-card fade">
+<img src="https://via.placeholder.com/300x350">
+<h2>Samsung S24</h2>
+<p class="desc">Flagship masa kini.</p>
+<p class="price">Rp 12.000.000</p>
+<a class="wa-btn" href="https://wa.me/6280000000000?text=Halo%20Saya%20mau%20pesan%20Samsung%20S24" target="_blank">Pesan Sekarang</a>
+</div>
+
+<div class="product-card fade delay1">
+<img src="https://via.placeholder.com/300x350">
+<h2>iPhone 15 Pro</h2>
+<p class="desc">Cepat dan premium.</p>
+<p class="price">Rp 18.500.000</p>
+<a class="wa-btn" href="https://wa.me/6280000000000?text=Halo%20Saya%20mau%20pesan%20iPhone%2015%20Pro" target="_blank">Pesan Sekarang</a>
+</div>
+</main>
+
+<section class="keluhan-box">
+<h2>Form Keluhan Pelanggan</h2>
+<p>Silakan isi format keluhan di bawah, nanti langsung terkirim ke WhatsApp.</p>
+
+<form id="keluhanForm">
+<label>Nama Anda:</label>
+<input type="text" id="nama" required>
+
+<label>Nomor HP / WA:</label>
+<input type="text" id="nomor" required>
+
+<label>Pilih Produk:</label>
+<select id="produk">
+<option>Samsung S24</option>
+<option>iPhone 15 Pro</option>
+<option>Xiaomi 14 Ultra</option>
+<option>Produk Lain</option>
+</select>
+
+<label>Keluhan Anda:</label>
+<textarea id="keluhan" rows="5" required></textarea>
+
+<button type="button" id="kirimKeluhan">Kirim Keluhan via WhatsApp</button>
+</form>
+</section>
+
+<footer class="footer">
+<p>© 2025 — Toko HP Kece Badai Premium</p>
+</footer>
+
+<div id="chat-btn">💬</div>
+<div id="chat-box">
+  <div id="chat-header">AI Live Chat 🤖</div>
+  <div id="chat-messages"></div>
+  <div id="chat-input-area">
+    <input id="chat-input" type="text" placeholder="Tulis pesan...">
+    <button id="chat-send">Kirim</button>
+  </div>
+</div>
+
+<script src="chat.js"></script>
+<script src="form.js"></script>
+</body>
+</html>
